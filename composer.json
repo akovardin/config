@@ -2,7 +2,7 @@
     "name": "tvr/config",
     "description": "Simple Config Class",
     "license": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
-    "version":"dev-master",
+    "version":"v1.0.1",
     "authors": [
         {
             "name": "horechek",
