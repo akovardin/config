@@ -10,6 +10,7 @@ echo $config->getParam('this.config.param1');
 ```
 
 Mainconfig file:
+
 ```php
 <?php
 return array(
