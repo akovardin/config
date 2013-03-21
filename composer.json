@@ -1,0 +1,18 @@
+{
+    "name": "tvr/config",
+    "description": "Simple Config Class",
+    "license": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
+    "authors": [
+        {
+            "name": "horechek",
+            "email": "horechek@gmail.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {
+        "phpunit/phpunit": "3.7.18"
+    },
+    "autoload" : {
+        "psr-0" : {"Tvr": "src/"}
+    }
+}
