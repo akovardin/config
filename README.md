@@ -1,4 +1,4 @@
-## Simple config file
+## Simple config class
 
 Usage:
 
