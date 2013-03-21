@@ -1,17 +1,32 @@
 <?php
+/**
+* Config class file
+* 
+* @author horechek@gmail.com
+* @link http://tvorzasp.com
+* @copyright @horechek
+* @license http://doc.tvorzasp.com/COPYING.txt
+*/
 
 namespace Tvr;
 
+/**
+ * Main Config class
+ * 
+ * @author horechek@gmail.com
+ * @version 0.1
+ * @package Tvr
+ */
 class Config
-{
-    private $config;
+{   
+    private $config = array();
 
     public function __construct($config)
     {
         $this->config = $config;
     }
 
-    public function getParam($name, $default = false)
+    public function getParam($name, $default = null)
     {
         $path = explode('.', $name);
 
@@ -34,7 +49,7 @@ class Config
         for ($i = count($path)-1; $i >= 0 ;$i--) {
                $value = array($path[$i] => $value);
         }
-        $this->config = array_merge_recursive($this->config, $value);
+        $this->config = array_merge($this->config, $value);
         return $this;
     }
 }
