@@ -4,7 +4,10 @@ Usage:
 
 ```php
 <?php
-$this->config = new Config(__DIR__.'/../data/mainconfig.php');
+
+use \Tvr\Config;
+
+$config = new Config(__DIR__.'/../data/mainconfig.php');
 echo $config->getParam('this.config.param1');
 ?>
 ```
@@ -33,3 +36,4 @@ Install from packagist
         "tvr/config": "v1.0.1"
     }
 }
+```
