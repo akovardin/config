@@ -24,3 +24,12 @@ return array(
 );
 ?>
 ```
+
+Install from packagist
+
+```
+{
+    "require": {
+        "tvr/config": "v1.0.1"
+    }
+}
